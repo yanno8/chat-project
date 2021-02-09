@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+.hide {
+  display: none;
+}
+html, body, #app {
+  height: 100%;
+}
+body {
+  background: #222;
+  color: #ddd;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3em;
+}
+a {
+  text-decoration: none;
+  color: skyblue;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  height: 100%;
+  display: flex;
+}
+.sidebar {
+  background: #2a2a2a;
+}
+.sidebar.left {
+  flex-basis: 250px;
+}
+.sidebar.right {
+  flex-basis: 200px;
+}
+.content {
+  flex-grow: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.header-block {
+  display: flex;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+  border-bottom: 1px solid #444;
+  min-height: 90px;
+}
+.header-block .details .name {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.header-block .details .description {
+  color: #aaa;
+}
+.avatar {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+.user-block {
+  justify-content: center;
+}
+.user-block .details {
+  margin-left: 10px;
+}
+.user-block .details .name {
+  margin-bottom: 5px;
+}
+.user-block .details .actions {
+  font-size: 12px;
+  display: flex;
+}
+.user-block .details .actions li:not(:last-of-type) {
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px solid #444;
+}
+.user-block .details .actions li a {
+  display: block;
+}
+.list .list-item {
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #444;
+}
+.list .list-item .icon {
+  margin-right: 10px;
+  font-style: italic;
+}
+.list .list-item.active {
+  color: #ddd;
+  background: #222;
+}
+.list .list-item:hover {
+  color: #ddd;
+}
+.channel-list .list-item {
+  justify-content: center;
+}
+.channel-block {
+  justify-content: flex-start;
+}
+.messages-block {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.messages-block .messages-push {
+  flex-grow: 1;
+}
+.messages-block .messages {
+  padding: 5px;
+}
+.messages-block .messages .message {
+  display: flex;
+  padding: 10px 20px;
+  background: #323232;
+}
+.messages-block .messages .message:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+.messages-block .messages .message .avatar {
+  margin-right: 10px;
+}
+.messages-block .messages .message .details {
+  flex-grow: 1;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+.messages-block .messages .message .details > *:not(.name) {
+  margin-left: 5px;
+  color: #aaa;
+  font-size: 12px;
+}
+.messages-block .messages .message .content {
+  width: 100%;
+}
+.messages-block .messages-form {
+  padding: 5px;
+}
+.messages-block .messages-form .input {
+  color: #ddd;
+  outline: none;
+  border: 2px solid #444;
+  background: #323232;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: block;
+}
+.user-list .list-item {
+  justify-content: flex-start;
+}
+.user-list .avatar {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}

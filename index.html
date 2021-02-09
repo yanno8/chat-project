@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html>    
+    <head>        
+        <meta charset="utf-8" />     
+        <link rel="stylesheet" href="style.css"/>   
+        <title>Chat temps réel !</title>  
+    </head> 
+    <body>
+<div id="app">
+    <div class="container">
+        <div class="sidebar left">
+            <div class="header-block user-block">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1533264515790-38b563064b68?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                </div>
+                <div class="details">
+                    <div class="name">Johnny</div>
+                    <ul class="actions">
+                        <li>
+                            <a href="#">Change name</a>
+                        </li>
+                        <li>
+                            <a href="#">Leave</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list channel-list">
+                <a href="#" class="list-item active">
+                    <div class="icon">#</div>
+                    <div class="name">General</div>
+                </a>
+                <a href="#" class="list-item">
+                    <div class="icon">#</div>
+                    <div class="name">Random</div>
+                </a>
+            </div>
+            
+            <div class="header-block">
+                <div class="details">
+                    <div class="name">Users</div>
+                    <div class="description">Online - 2</div>
+                </div>
+            </div>
+            <div class="list user-list">
+                <a href="#" class="list-item">
+                    <div class="avatar">
+                        <img src="https://images.unsplash.com/photo-1533264515790-38b563064b68?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                    </div>
+                    <div class="name">Johnny</div>
+                </a>
+                <a href="#" class="list-item">
+                    <div class="avatar">
+                        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                    </div>
+                    <div class="name">Adam</div>
+                </a>
+            </div>
+            <div class="header-block">
+                <div class="details">
+                    <div class="description">Offline - 1</div>
+                </div>
+            </div>
+            <div class="list user-list">
+                <a href="#" class="list-item">
+                    <div class="avatar">
+                        <img src="https://images.unsplash.com/photo-1495231916356-a86217efff12?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                    </div>
+                    <div class="name">Susan</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header-block channel-block">
+                <div class="details">
+                    <div class="name">General</div>
+                    <div class="description">Generic channel description</div>
+                </div>
+            </div>
+            <div class="messages-block" id="zone_chat">
+                <div class="messages-push"></div>
+                <div class="messages">
+                    <div class="message">
+                        <div class="content-wrapper">
+                            <div class="content">
+                                TODO: status/system message
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="avatar">
+                            <img src="https://images.unsplash.com/photo-1533264515790-38b563064b68?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="details">
+                                <a href="#" class="name">Johhny</a>
+                                <div class="date">Today at 09:45</div>
+                            </div>
+                            <div class="content" id="formulaire_chat">
+                                How's it going everybody! I've got some good news y'all. 😇
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="message">
+                        <div class="avatar">
+                            <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="details">
+                                <a href="#" class="name">Adam</a>
+                                <div class="date">Today at 09:57</div>
+                            </div>
+                            <div class="content" id="formulaire_chat">
+                                I'm amazing, got back from my trip. Took a week off and went to Taiwan.<br>
+                                Had a dirt bath alongside elephants - it was bizarre!<br>
+                                I hope to visit it again soon. So much to yet discover.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="message">
+                        <div class="avatar">
+                            <img src="https://images.unsplash.com/photo-1533264515790-38b563064b68?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="details">
+                                <a href="#" class="name">Johhny</a>
+                                <div class="date">Today at 10:21</div>
+                            </div>
+                            <div class="content" id="formulaire_chat">
+                                Happy to hear that! ✌
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="messages-form">
+                    <form action="javascaript:void(0)" autocomplete="off">
+                        <input type="text" class="input" id="message" placeholder="Message #General">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar right hide"  >
+            <div class="list user-list">
+                <a href="#" class="list-item">
+                    <div class="avatar">
+                        <img src="https://images.unsplash.com/photo-1533264515790-38b563064b68?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                    </div>
+                    <div class="name">Johnny</div>
+                </a>
+                <a href="#" class="list-item">
+                    <div class="avatar">
+                        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                    </div>
+                    <div class="name">Adam</div>
+                </a>
+                <a href="#" class="list-item">
+                    <div class="avatar">
+                        <img src="https://images.unsplash.com/photo-1495231916356-a86217efff12?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt>
+                    </div>
+                    <div class="name">Susan</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+<script>
+     var socket = io.connect('http://localhost:8080');
+     var pseudo = prompt('Quel est votre pseudo ?');            
+            socket.emit('nouveau_client', pseudo);           
+            document.title = pseudo + ' - ' + document.title; // Quand on reçoit un message, on l'insère dans la page            
+            socket.on('message', function(data) {                
+                insereMessage(data.pseudo, data.message)            
+                })            // Quand un nouveau client se connecte, on affiche l'information            
+                socket.on('nouveau_client', function(pseudo) {                
+                    $('#zone_chat').prepend('<p><em>' + pseudo + ' a rejoint le Chat !</em></p>');            
+                    })            // Lorsqu'on envoie le formulaire, on transmet le message et on l'affiche sur la page            
+                    $('#formulaire_chat').submit(function (e) { 
+                        e.preventDefault();           
+                        var message = $('#message').val();
+                        socket.emit('message', message); // Transmet le message aux autres                
+                        insereMessage(pseudo, message); // Affiche le message aussi sur notre page                
+                        $('#message').val('').focus(); // Vide la zone de Chat et remet le focus dessus                
+                        return false; // Permet de bloquer l'envoi "classique" du formulaire            
+                    });                        // Ajoute un message dans la page            
+                    $('#message').keypress(function(e) {
+                        if(e.which == 13) {
+                            socket.emit('message', message);
+                            insereMessage(pseudo, message);
+                        }
+                    });
+                    function insereMessage(pseudo, message) {                
+                        $('#zone_chat').prepend('<p><strong>' + pseudo + '</strong> ' + message + '</p>');            
+                        }        
+</script>
+</body>
+</html>
